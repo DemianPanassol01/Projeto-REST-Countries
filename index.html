@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Teste Nova Front-End</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="img/png/logo_nova.png" alt="Logo Nova">
+
+            <a id="btnVoltar">
+                <span></span>
+                <p>Voltar</p>
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section class="sel-filtros">
+            <div class="filtro">
+                <label for="selOpt">Filtrar por</label>
+                <select id="selOpt">
+                    <option value="0" selected>Escolha uma opção</option>
+                    <option value="1">Região</option>
+                    <option value="2">Capital</option>
+                    <option value="3">Lingua</option>
+                    <option value="4">País</option>
+                    <option value="5">Código de ligação</option>
+                </select>
+            </div>
+
+            <div id="selFiltro2" class="filtro"></div>
+
+            <button id="dispPesquisa">PESQUISAR</button>
+        </section>
+
+        <section id="resultadoPesquisa" class="resultado-pesquisa">
+
+            <!-- Resultado da Pesquisa será inserido aqui -->
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/Countries.js"></script>
+    <script src="js/Filtro.js"></script>
+    <script src="js/Carrossel.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
